@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratima Parajuli - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8fdf8; /* Soft greenish white */
+            color: #2f3e46; /* Dark forest green */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #ffffff; /* White background */
+            padding: 40px;
+            box-shadow: 0px 5px 15px rgba(0, 50, 0, 0.1);
+            border-radius: 12px;
+            border-left: 8px solid #52796f; /* Muted Green */
+            border-top: 8px solid #84a98c; /* Light Green */
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Left Column */
+        .left-column {
+            width: 35%;
+            text-align: center;
+            padding-right: 20px;
+            border-right: 3px solid #cad2c5;
+        }
+        .left-column img {
+            width: 220px;
+            height: 260px;
+            border-radius: 10px;
+            border: 4px solid #52796f;
+            box-shadow: 0px 4px 10px rgba(82, 121, 111, 0.3);
+        }
+        .left-column h1 {
+            font-size: 2.5em;
+            color: #52796f;
+        }
+        .left-column p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #6b9080;
+        }
+
+        /* Right Column */
+        .right-column {
+            width: 65%;
+            padding-left: 30px;
+        }
+        h2 {
+            color: #52796f;
+            border-bottom: 3px solid #84a98c;
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+        .entry {
+            background: #f0f7f4; /* Light muted green */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 50, 0, 0.1);
+            border-left: 5px solid #52796f;
+            color: #2f3e46;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e5ece9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        ul li:hover {
+            background: #d8e3df;
+        }
+
+        /* Contact Section */
+        .contact p, .left-column p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .contact a {
+            color: #52796f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #84a98c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .left-column {
+                width: 100%;
+                border-right: none;
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .right-column {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column (Profile) -->
+        <div class="left-column">
+            <img src="https://i.postimg.cc/TP09q6RW/Whats-App-Image-2025-02-16-at-00-52-59-0419f500.jpg" alt="Pratima Parajuli">
+            <h1>Pratima Parajuli</h1>
+            <p>Frontend Developer | JavaScript Enthusiast | UI/UX Designer</p>
+        </div>
+
+        <!-- Right Column (Details) -->
+        <div class="right-column">
+            <!-- Education -->
+            <section class="education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <p>2024 - 2027</p>
+                    <p><strong>Bachelor's of Computer Applications, Galgotias University</strong></p>
+                    <p>Currently pursuing a degree in Computer Applications, focusing on full-stack development, JavaScript frameworks, and UI/UX design.</p>
+                </div>
+            </section>
+
+            <!-- Work Experience -->
+            <section class="experience">
+                <h2>Work Experience</h2>
+                <div class="entry">
+                    <p><strong>Founder & Developer - Project R</strong></p>
+                    <p>Developed Project R, a platform offering in-depth reviews and synopsis of top movies and anime from around the world.</p>
+                    <p>Key Contributions:</p>
+                    <ul>
+                        <li>Designed an intuitive UI for better user experience</li>
+                        <li>Developed dynamic web pages using JavaScript & CSS</li>
+                        <li>Implemented SEO strategies for wider audience reach</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript (ES6+)</li>
+                    <li>Frontend Development (React.js, Next.js)</li>
+                    <li>UI/UX Design & Prototyping</li>
+                    <li>Responsive Web Design & Optimization</li>
+                    <li>C Programming & Data Structures</li>
+                    <li>Version Control (Git, GitHub)</li>
+                </ul>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:pratimaparajuli685@gmail.com">pratimaparajuli685@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/PratimaParajuli" target="_blank">github.com/PratimaParajuli</a></p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
